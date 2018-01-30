@@ -1,0 +1,79 @@
+#fundo{
+	background: url('imagens/pattern.jpg');
+}
+
+header{
+	text-align: center;
+	margin: 10px;
+}
+
+#pagina-inicial{
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.borda{
+	border: 1px solid black;
+}
+
+.campo-tabela{
+	height: 100px;
+	width: 100px;
+}
+
+.cursor-mao{
+	cursor:  pointer;
+}
+
+p{
+	font-weight: bold;
+}
+
+#btn-iniciar-jogo{
+	padding-top: 50px;
+}
+
+#palco-jogo{
+	display: none;
+	margin-top: 20px;
+}
+
+#vez, #vencedor{
+	width: 149px;
+	height: 142px;
+}
+
+#cabecalho{
+	background: white;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+#ap1, #ap2{
+	border: 1px solid black;
+	width: 50%;
+	border-radius: 20px;
+	background: white;
+}
+
+#btn-reiniciar-jogo{
+	background: white;
+	font-size: 14px;
+	color: black;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+#btn-reiniciar-jogo:hover{
+	text-decoration: none;
+	background: #BBBBBB;
+	transition-duration: 0.8s;
+}
+
+.tabela{
+	margin-top: 20px;
+}
+
+.jogador{
+	margin-top: 80px;
+}

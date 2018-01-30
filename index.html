@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<link rel="icon" href="imagens/favicon.png">
+
+		<script src="jquery-3.3.1.js"></script>
+		<script src="jogo.js"></script>
+
+		<!-- Bootstrap -->
+	    <link href="bootstrap3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="estilo.css" rel="stylesheet">
+
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+
+	<body class="container">
+
+		<div id="fundo" class="borda">
+
+			<header id="cabecalho">
+				<h1>JOGO DA VELHA</h1>			
+			</header> 
+			
+			<div id="pagina-inicial" class="row">
+				<center>
+					<div class="col-md-4">
+						<img src="imagens/jogador_1.png">
+						<br/><br/>
+						<input id="apelido1" type="text" maxlength="10" placeholder="Apelido do jogador 1" autofocus="" />
+					</div>
+
+					<div class="col-md-4">
+						<img id="btn-iniciar-jogo" class="cursor-mao" src="imagens/iniciar.png">
+					</div>
+
+					<div class="col-md-4">
+						<img src="imagens/jogador_2.png">
+						<br/><br/>
+						<input id="apelido2" type="text" maxlength="10" placeholder="Apelido do jogador 2"/>
+					</div>
+				</center>
+			</div>
+
+			<div id="palco-jogo">
+					<center>
+						<button id="btn-reiniciar-jogo" class="btn-sm" />Reiniciar o jogo</button>
+
+						<div class="row">
+							<div class="col-md-4 jogador">
+								<img src="imagens/jogador_1.png">
+								<p id="ap1"></p>
+							</div>
+
+							<div class="col-md-4">
+								<table border="3" class="tabela">
+									<tr>
+										<td>
+											<div id="a-1" class="campo-tabela jogada"></div>
+										</td>
+
+										<td>
+											<div id="a-2" class="campo-tabela jogada"></div>
+										</td>
+
+										<td>
+											<div id="a-3" class="campo-tabela jogada"></div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<div id="b-1" class="campo-tabela jogada"></div>
+										</td>
+
+										<td>
+											<div id="b-2" class="campo-tabela jogada"></div>
+										</td>
+										
+										<td>
+											<div id="b-3" class="campo-tabela jogada"></div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<div id="c-1" class="campo-tabela jogada"></div>
+										</td>
+
+										<td>
+											<div id="c-2" class="campo-tabela jogada"></div>
+										</td>
+										
+										<td>
+											<div id="c-3" class="campo-tabela jogada"></div>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="col-md-4 jogador">
+								<img src="imagens/jogador_2.png">
+								<p id="ap2"></p>
+							</div>
+						</div>
+
+						<div class="row" id="vez1">
+							<div class="col-md-12">
+								<br/><p>É a vez de:<br/></p><div id="vez"></div>
+							</div>
+						</div>
+
+						<div class="row" id="vencedor1">
+							<div class="col-md-12">
+								<br/><p>Vencedor:<br/></p><div id="vencedor"></div>
+							</div>
+						</div>
+
+					</center>
+					
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="bootstrap3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
